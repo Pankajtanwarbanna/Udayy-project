@@ -4,7 +4,7 @@ var morgan = require('morgan');             // middleware to log http requests
 var port = process.env.PORT || 5500;
 var bodyParser = require('body-parser');
 var router = express.Router();
-var apiRoutes = require('./app/api')(router);
+var apiRoutes = require('./api')(router);
 app.use(morgan('dev'));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
